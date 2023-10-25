@@ -1,0 +1,39 @@
+.game-board {
+  width: 90px;
+  height: 90px;
+  display: grid;
+}
+
+.game-square {
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.game-container {
+  display: flex;
+  margin: 25px;
+  flex-direction: row;
+}
+
+.board-row {
+  border: 1px solid;
+  display: flex;
+}
+
+.board-row:nth-child(2) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.game-info {
+  margin-left: 200px;
+}
+
+.info {
+  font-size: 20px;
+}
