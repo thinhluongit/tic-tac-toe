@@ -53,6 +53,7 @@ const Game = () => {
   return (
     <div className="game-container">
       <div className="game-board">
+        <div className="status">{status}</div>
         <Board
           xIsNext={xIsNext}
           squares={currentSquares}
@@ -61,7 +62,6 @@ const Game = () => {
         />
       </div>
       <div className="game-info">
-        <div className="info">{status}</div>
         <div>
           <Switch
             className="switch"
@@ -72,7 +72,9 @@ const Game = () => {
           />
         </div>
         <br />
-        <ol>{sort ? moves : new Array(Array.from(moves).reverse())}</ol>
+        <ol className="move-list">
+          {sort ? moves : new Array(Array.from(moves).reverse())}
+        </ol>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .game-board {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   display: grid;
 }
 
@@ -18,6 +18,8 @@
   display: flex;
   margin: 25px;
   flex-direction: row;
+  align-self: center;
+  justify-content: center;
 }
 
 .board-row {
@@ -31,9 +33,21 @@
 }
 
 .game-info {
-  margin-left: 200px;
+  margin-left: 250px;
 }
 
-.info {
+.status {
   font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
+.switch{
+    margin-top: 20px;
+}
+
+.move-list{
+    margin-top: -10px;
+}
+
+
